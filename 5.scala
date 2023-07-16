@@ -15,7 +15,7 @@ def main(args: Array[String]): Unit = {
   } else {
     num2 = num1 - 1
   }
-  println(num2)
+  //println(num2)
 
   val result = addition(num2)
   println("Sum is: " + result)

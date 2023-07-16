@@ -7,8 +7,7 @@ def printFibonacci(n: Int): Unit = {
   }
 
   if (n > 0) {
-    print(0 + " ")
-    fibonacciHelper(0, 1, n - 1)
+    fibonacciHelper(0, 1, n)
   }
 }
 

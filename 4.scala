@@ -1,17 +1,17 @@
-def checkeven(num:Int):Unit={
-    var value = num
-    if(value==1){
-        println("Your number is odd")
+def main(args: Array[String]): Unit = {
+  print("Enter an integer number: ")
+  val num = scala.io.StdIn.readInt()
+  Check_even_odd(num)
+  ()
+}
+def Check_even_odd(n:Int):Unit={
+    if(n==1){
+        println("Number is Odd")
     }
-    else if(value==0){
-        println("Your number is even")
+    else if(n==1){
+        println("Number is Even")
     }
     else{
-        checkeven(value-2)
+        Check_even_odd(n-2)
     }
-}
-def main(args: Array[String]): Unit = {
-  println("Enter your Number:")
-  val num1 = scala.io.StdIn.readInt()
-  checkeven(num1)
 }
